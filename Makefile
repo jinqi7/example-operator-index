@@ -9,7 +9,7 @@ YQ = bin/yq
 $(OPERATOR_CATALOG_CONTRIBUTION):
 	@echo "$(OPERATOR_CATALOG_CONTRIBUTION) does not exist"; \
          echo ">>> you must first customize and execute 'make catalog' to generate the catalog contribution"; \
-         false;
+         #false;
 
 .PHONY: catalog
 # replace this stub with one customized to serve your needs ... some examples below
@@ -22,7 +22,7 @@ catalog: $(OPERATOR_CATALOG_CONTRIBUTION)
 # comment out / customize the one that makes the most sense, or use them as examples in defining your own
 #
 # --- BASIC VENEER ---
-#catalog: basic framework
+catalog: basic framework
 #
 # --- SEMVER VENEER ---
 #catalog: semver framework
